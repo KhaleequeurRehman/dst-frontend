@@ -1,0 +1,25 @@
+.demo {
+	color: white;
+	background-color: var(--third-blue);
+	max-width: fit-content;
+	padding: 10px 20px;
+	border-radius: 10px;
+	font-weight: bold;
+	font-size: 1.6rem;
+	white-space: nowrap;
+}
+
+.demo:hover {
+	background-color: var(--secondary-blue);
+	transition: 200ms;
+}
+
+
+/* @media only screen and (max-width: 640px) { */
+@media only screen and (max-width: 640px) {
+
+	.demo{
+		font-size: 1rem;
+		padding: 10px 36px;
+	}
+}

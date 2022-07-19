@@ -1,0 +1,187 @@
+import React from 'react'
+  import Header from '../../components/layout/Header'
+  import Footer from '../../components/layout/Footer'
+  import BlogCmp from '../../components/BlogCmp'
+  import { useTheme } from '@mui/material/styles';
+  import Box from '@mui/material/Box';
+  import Card from '@mui/material/Card';
+  import CardContent from '@mui/material/CardContent';
+  import CardMedia from '@mui/material/CardMedia';
+  import IconButton from '@mui/material/IconButton';
+  import Typography from '@mui/material/Typography';
+  import SkipPreviousIcon from '@mui/icons-material/SkipPrevious';
+  import PlayArrowIcon from '@mui/icons-material/PlayArrow';
+  import SkipNextIcon from '@mui/icons-material/SkipNext';
+  
+  const Blogs = () => {
+    const theme = useTheme();
+
+    const descVal = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.";
+
+    return (
+      <>
+          <Header />
+              <div style={{minHeight: "80vh"}}>
+                <h1>blogs page</h1> 
+                
+                {/* <BlogCmp
+                id="62cd409b322c53bf2426284e"
+                // isUser={localStorage.getItem("userId") === blog.user._id}
+                isUser="62cd409b322c53bf2426284e"
+                title="Khaleeque"
+                description={descVal}
+                imageURL="https://miro.medium.com/max/1400/1*uPL1uCtLBRSk6akPL2hNzg.jpeg"
+                userName="Khaleeque Developer"
+                /> */}
+                <Card  
+                sx={{
+                  display: 'flex',
+                  width: "40%",
+                  margin: "auto",
+                  mt: 2,
+                  padding: 2,
+                  boxShadow: "5px 5px 10px #ccc",
+                  ":hover": {
+                    boxShadow: "10px 10px 20px #ccc",
+                  },
+                }}>
+                  <CardMedia
+                    component="img"
+                    sx={{ width: "300px",height: "300px" }}
+                    // image="https://miro.medium.com/max/1400/1*uPL1uCtLBRSk6akPL2hNzg.jpeg"
+                    image="https://colorlib.com/cdn-cgi/image/width=800,height=533,fit=crop,quality=80,format=auto,onerror=redirect,metadata=none/wp-content/uploads/sites/2/Niche-WordPress-Themes.jpg"
+                    alt="Live from space album cover"
+                  />
+                  <Box sx={{ display: 'flex', flexDirection: 'column' }}>
+                  <CardContent sx={{ flex: '1 0 auto' }}>
+                    <Typography component="div" variant="h5">
+                      Live From Space
+                    </Typography>
+                    <Typography variant="subtitle1" color="text.secondary" component="div">
+                      Mac Miller
+                    </Typography>
+                  </CardContent>
+                  <Box sx={{ display: 'flex', alignItems: 'center', pl: 1, pb: 1 }}>
+                    <IconButton aria-label="previous">
+                      {theme.direction === 'rtl' ? <SkipNextIcon /> : <SkipPreviousIcon />}
+                    </IconButton>
+                    <IconButton aria-label="play/pause">
+                      <PlayArrowIcon sx={{ height: 38, width: 38 }} />
+                    </IconButton>
+                    <IconButton aria-label="next">
+                      {theme.direction === 'rtl' ? <SkipPreviousIcon /> : <SkipNextIcon />}
+                    </IconButton>
+                  </Box>
+                </Box>
+              </Card>
+              </div>
+          <Footer />
+      </>
+    )
+  }
+  
+  export default Blogs
+
+
+
+
+
+
+
+  import {
+    Avatar,
+    Box,
+    Card,
+    CardContent,
+    CardHeader,
+    CardMedia,
+    IconButton,
+    Typography,
+  } from "@mui/material";
+  import React from "react";
+  import ModeEditOutlineIcon from "@mui/icons-material/ModeEditOutline";
+  import DeleteForeverIcon from "@mui/icons-material/DeleteForever";
+  // import { useNavigate } from "react-router-dom";
+  import axios from "axios";
+  // import { useStyles } from "./utils.js";
+  const BlogCmp = ({ title, description, imageURL, userName, isUser, id }) => {
+    // const classes = useStyles();
+    // const navigate = useNavigate();
+    const handleEdit = () => {
+      console.log("handle edit working");
+      // navigate(`/myBlogs/${id}`);
+    };
+    // const deleteRequest = async () => {
+    //   const res = await axios
+    //     .delete(`http://localhost:5000/api/blog/${id}`)
+    //     .catch((err) => console.log(err));
+    //   const data = await res.data;
+    //   return data;
+    // };
+    const handleDelete = () => {
+      console.log("handle delete working");
+      // deleteRequest()
+      //   .then(() => navigate("/"))
+      //   .then(() => navigate("/blogs"));
+    };
+    return (
+      <div>
+        {" "}
+        <Card
+          sx={{
+            width: "40%",
+            margin: "auto",
+            mt: 2,
+            padding: 2,
+            boxShadow: "5px 5px 10px #ccc",
+            ":hover": {
+              boxShadow: "10px 10px 20px #ccc",
+            },
+          }}
+        >
+          {isUser && (
+            <Box display="flex">
+              <IconButton onClick={handleEdit} sx={{ marginLeft: "auto" }}>
+                <ModeEditOutlineIcon color="warning" />
+              </IconButton>
+              <IconButton onClick={handleDelete}>
+                <DeleteForeverIcon color="error" />
+              </IconButton>
+            </Box>
+          )}
+          <CardHeader
+            avatar={
+              <Avatar
+                // className={classes.font}
+                sx={{ bgcolor: "red" }}
+                aria-label="recipe"
+              >
+                {userName ? userName.charAt(0) : ""}
+              </Avatar>
+            }
+            title={title}
+          />
+          <CardMedia
+            component="img"
+            height="194"
+            image={imageURL}
+            alt="Paella dish"
+          />
+  
+          <CardContent>
+            <hr />
+            <br />
+            <Typography
+              // className={classes.font}
+              variant="body2"
+              color="text.secondary"
+            >
+              <b>{userName}</b> {": "} {description}
+            </Typography>
+          </CardContent>
+        </Card>
+      </div>
+    );
+  };
+  
+  export default BlogCmp;

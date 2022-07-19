@@ -1,0 +1,9 @@
+.dashboard{
+    min-height: calc(100vh - 80px);
+    background-color: var(--primary-blue);
+    color: white;
+}
+.dashboard h1{
+    margin: 0px;
+    padding: 0px;
+}

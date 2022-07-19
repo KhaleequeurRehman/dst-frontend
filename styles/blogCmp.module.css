@@ -1,0 +1,466 @@
+.blogsSectionWrapper{
+    font-family: "Roboto !important";
+    min-height: 100vh;
+    width: 100%;
+    /* background: white; */
+    /* border: 1px solid #797979; */
+}
+.blogsSectionWrapper .blogsHeading{
+    width:100%;
+    margin: 0 auto;
+    /* background: #ebe8e8; */
+}
+.blogsSectionWrapper .blogsHeading h1{
+    margin: 30px 0 30px 0px;
+    padding: 10px 0 20px 0;
+    color: var(--primary-blue);
+    text-align: center;
+}
+
+.blogsSectionWrapper .blogsHeading span{
+    margin: 30px 0 30px 0px;
+    font-weight: 400;
+    border-bottom: 2px solid var(--primary-blue);
+    padding: 10px 0 2px 0;
+    color: var(--primary-blue);
+    text-align: center;
+}
+
+.blogsContentWrapper{
+    min-height: calc(100vh - 150px);
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 0 30px 0;
+}
+.blogsContent{
+    width:75%;
+    /* border: 2px solid #ff0000; 
+    border-radius: 8px; */
+    box-shadow: 0px 5px 12px 0px rgb(0 0 0 / 5%);
+    padding: 10px;
+}
+.blogCard{
+    width: 80%;
+    margin: 0 auto;
+    background: white;
+    border: 1px solid #eeeeee;
+    box-shadow: 0px 5px 12px 0px rgb(0 0 0 / 5%);
+    border-radius: 3px;
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+.blogCard .blogImageWrapper {
+    width: 100%;
+    height: 315px;
+}
+
+.blogCard .blogImageWrapper span {
+    height: 315px !important;
+}
+.blogCard .blogImageWrapper span img {
+  min-width: unset !important;
+  min-height: 315px !important;
+  width: 100% !important;
+  margin: 0 !important;
+  /* border-radius: 8px; */
+}
+.cardBodyWrapper{
+    padding: 30px 20px;
+}
+.cardBodyWrapper .blogtitleWrapper h2 {
+    margin-bottom: 8px;
+    font-size: 30px;
+    padding: 5px 10px
+}
+.cardBodyWrapper .blogtitleWrapper h2 a{
+    font-size: 100%;
+}
+.cardBodyWrapper .blogtitleWrapper h2 a:hover{
+    color: #797979;
+}
+.cardBodyWrapper .blogtitleWrapper p{
+    color: #797979;
+    font-size: 15px;
+    letter-spacing: 0.05rem;
+    padding: 5px 10px
+}
+.cardBodyWrapper .blogtitleWrapper p span{
+    margin-right: 10px;
+}
+.cardBodyWrapper .blogtitleWrapper p span svg{
+    cursor: pointer;
+    margin-right: 5px;
+}
+.cardBodyWrapper .blogDescriptionWrapper p{
+    margin: 12px 0 20px;
+    line-height: 24px;
+    font-size: 18px;
+    padding: 5px 10px;
+    word-wrap: break-word;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.cardBodyWrapper .blogReadMoreBtnBox{
+    margin: 30px 0 10px 0;
+    padding: 5px 10px;
+}
+.cardBodyWrapper .blogReadMoreBtnBox .readMoreBtn{
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    background: var(--primary-blue);
+    color: white;
+    border-radius: 8px;
+}
+
+.cardBodyWrapper .blogReadMoreBtnBox .readMoreBtn:hover{
+    background: transparent;
+    outline: 2px solid var(--primary-blue);
+    color: var(--primary-blue);
+}
+
+.singleBlogCardWrapper{
+    font-family: "Roboto !important";
+    /* margin: 50px 0; */
+    background: white;
+    border: 1px solid white;
+}
+
+.singleBlogHeading h1{
+    margin: 30px 0 30px 0px;
+    padding: 10px 0 20px 0;
+    color: var(--primary-blue);
+    text-align: center;
+}
+.singleBlogHeading span{
+    margin: 30px 0 30px 0px;
+    font-weight: 400;
+    border-bottom: 2px solid var(--primary-blue);
+    padding: 10px 0 2px 0;
+    color: var(--primary-blue);
+    text-align: center;
+}
+
+.singleBlogCard{
+    width: 90%;
+    margin: 0px auto;
+    margin: 50px auto 40px auto;
+    /* background: white; */
+    /* border: 1px solid #eeeeee;
+    box-shadow: 0px 5px 12px 0px rgb(0 0 0 / 5%); */
+    /* border-radius: 3px; */
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+
+
+.singleBlogtitleWrapper{
+    width: 100%;
+    margin: 15px 0;
+}
+.singleBlogtitleWrapper h2{
+    width: 96%;
+    background: #fbfbfb;
+    margin-bottom: 8px;
+    font-size: 35px;
+    padding: 15px 10px;
+    margin-left: 10px;
+}
+.singleBlogtitleWrapper h2::placeholder{
+    color: #797979;
+}
+.singleBlogImageWrapper{
+    width: 100%;
+    height: 315px;
+    padding: 0px 10px;
+}
+.singleBlogImageWrapper span{
+    height: 315px !important;
+}
+.singleBlogImageWrapper span img{
+  min-width: unset !important;
+  min-height: 315px !important;
+  width: 100% !important;
+  margin: 0 !important;
+}
+.singleBlogDetailsWrapper{
+    color: #797979;
+    font-size: 15px;
+    letter-spacing: 0.05rem;
+    padding: 5px 10px
+}
+
+.singleBlogDetailsWrapper p{
+    width: 98%;
+    background: #fbfbfb;
+    color: #797979;
+    font-size: 15px;
+    letter-spacing: 0.05rem;
+    padding: 20px 10px;
+    margin: 10px 0;
+}
+.singleBlogDetailsWrapper p span{
+    margin-right: 10px;
+}
+.singleBlogDetailsWrapper p span svg{
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.singleBlogDescriptionWrapper {
+    width: 85%;
+    text-align: justify;
+}
+.singleBlogDescriptionWrapper p{
+    margin: 12px 0 20px;
+    line-height: 24px;
+    font-size: 18px;
+    padding: 5px 10px;
+    word-wrap: break-word;
+    /* white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; */
+}
+
+.singleBlogCommentWrapper{
+    margin-top: 100px;
+    width: 85%;
+}
+.singleBlogCommentWrapper .singleBlogCommentHeading h2{
+    margin: 20px 0;
+    color: #202020;
+    font-size: 26px;
+}
+.singleBlogCommentWrapper form{
+    margin: 10px 0;
+}
+.singleBlogCommentWrapper form p{
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: #202020;
+}
+.singleBlogCommentWrapper form p span{
+    color: red;
+}
+.singleBlogCommentWrapper form textarea{
+    width: 80%;
+    min-height: 222px;
+    display: block;
+    background-color: #fffefe;
+    resize:none;
+    margin: 20px 0 30px 0;
+    /* border: 2px solid #ccc; */
+    outline: none;
+    border-radius: 8px;
+    font-size: 18px;
+    padding: 20px 10px;
+}
+
+.singleBlogCommentWrapper form button{
+    background: var(--primary-blue);
+    border: none;
+    outline: none;
+    padding: 10px 17px;
+    color: white;
+    border-radius: 4px;
+}
+
+.singleBlogCommentList{
+    width: 80%;
+    margin: 40px 0;
+}
+.singleBlogCommentListHeading p{
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 0 20px 0;
+    background: #fbfbfb;
+    border-radius: 8px;
+    color: #797979;
+}
+
+.singleBlogCommentListItem{
+    padding: 15px 10px;
+    display: flex;
+    width: 100%;
+    background: #fbfbfb;
+    border-radius: 8px;
+    color: #797979;
+    margin-bottom: 10px;
+}
+.singleBlogCommentListItemAvatar{
+    margin: 0 15px 0 0;
+    width: 60px;
+}
+.singleBlogCommentListItemAvatar div{
+    width: 56px;
+    height: 56px;
+    margin-top: 5px;
+}
+.singleBlogCommentListItemDetail{
+    font-size: 16px;
+    width: calc(100% - 60px);
+    font-weight: 600;
+}
+.singleBlogCommentListItemDetail p:first-child{
+    margin: 10px 0 10px 0;
+}
+
+.blogsAside{
+    width:22%;
+    margin: 0 auto;
+    /* border: 2px solid green; 
+    border-radius: 8px; */
+    box-shadow: 0px 5px 12px 0px rgb(0 0 0 / 5%);
+    border-left: 1px solid #e3e2e2;
+    margin-bottom: 10px;
+}
+
+.blogsAsideSearchSection {
+    margin: 30px 0 40px 0 ;
+    position: relative;
+}
+.blogsAsideSearchSection input{
+    width: 90%;
+    display: block;
+    border: 2px solid var(--primary-blue);
+    outline: none;
+    /* border-radius: 10px; */
+    padding: 10px;
+    height: 40px;
+    font-size: 18px;
+    margin: 20px auto 30px auto;
+}
+.blogsAsideSearchSection button{
+   padding: 10px 15px;
+   position: absolute;
+   bottom: 0px;
+   right: 18px;
+   /* margin-bottom: 2px; */
+   /* height: 40px; */
+   border: none;
+   outline: none;
+   /* background-color: var(--primary-blue); */
+   /* color: white; */
+   background: transparent;
+   color: var(--primary-blue);
+}
+
+.blogsAsideCategorySection .blogsAsideCategoryHeading h2{
+    margin: 30px 0;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 300;
+    /* color: #202020; */
+}
+
+.blogsAsideCategorySection .blogsAsideCategoryList ul{
+    list-style: none;
+    padding: 10px;
+    word-wrap: break-word;
+}
+
+.blogsAsideCategorySection .blogsAsideCategoryList ul li{
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #797979;
+    border-bottom: 1px solid #cac6c6;
+    cursor: pointer;
+}
+.blogsAsideCategorySection .blogsAsideCategoryList ul li:hover{
+    color: #202020;
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    .blogsSectionWrapper .blogsHeading{
+        width: 100%;
+        margin: 20px auto;
+    }
+    .blogsSectionWrapper .blogsHeading h1{
+        margin: 0;
+        font-size: 26px;
+    }
+    .blogsSectionWrapper .blogsHeading span{
+        margin: 0;
+    }
+
+    .blogsContentWrapper{
+        flex-direction: column;
+    }
+
+    .blogsContent{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .blogCard{
+        width: 90%;
+    }
+
+    .blogCard .blogImageWrapper {
+        width: 100%;
+        height: 250px;
+    }
+    
+    .blogCard .blogImageWrapper span {
+        height: 250px !important;
+    }
+
+    .blogCard .blogImageWrapper span img {
+      min-height: 250px !important;
+    }
+
+    .cardBodyWrapper .blogtitleWrapper h2 {
+        font-size: 22px;
+    }
+    .cardBodyWrapper .blogtitleWrapper p{
+        font-size: 12px;
+    }
+    .cardBodyWrapper .blogDescriptionWrapper p{
+        font-size: 14px;
+    }
+    .cardBodyWrapper .blogReadMoreBtnBox .readMoreBtn{
+        padding: 10px 20px;
+        font-size: 12px;
+    }
+    
+    .cardBodyWrapper .blogReadMoreBtnBox .readMoreBtn:hover{
+        background: transparent;
+        outline: 2px solid var(--primary-blue);
+        color: var(--primary-blue);
+    }
+
+    .singleBlogDescriptionWrapper {
+        width: 95%;
+    }
+
+    .singleBlogCommentWrapper{
+        width: 95%;
+    }
+
+    .singleBlogCommentWrapper form textarea{
+        width: 100%;
+    }
+
+    .blogsAside{
+        width: 100%;
+        margin: 10px auto 20px auto;
+    }
+    
+    .blogsAsideSearchSection {
+        margin: 0px 0 40px 0;
+    }
+    
+    .blogsAsideCategorySection .blogsAsideCategoryHeading h2{
+        font-size: 26px;
+    }
+    
+    .blogsAsideCategorySection .blogsAsideCategoryList ul li{
+        font-size: 14px;
+    }
+}

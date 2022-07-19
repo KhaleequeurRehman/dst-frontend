@@ -1,0 +1,123 @@
+.demo {
+    color: white;
+    background-color: var(--secondary-blue);
+    display: grid;
+    justify-items: center;
+}
+
+.demo h1, .demo h2, .demo p {
+    text-align: center;
+}
+
+.demo p {
+    max-width: 450px;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.form {
+    display: grid;
+    margin-bottom: 2rem;
+    width: 500px;
+}
+
+.form input {
+    margin-bottom: 1rem;
+
+}
+
+.form label {
+    margin-top: 1rem;
+}
+
+.form button {
+    background-color: var(--third-blue);
+    width: 50%;
+    border: none;
+    color: var(--secondary-blue);
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin: 0 auto;
+    border-radius: 5px;
+    padding: 1rem 1rem;
+}
+
+.form button:hover {
+    cursor: pointer;
+    transition: 300ms;
+    background-color: var(--primary-blue);
+    color: white;
+}
+
+.form input, .form textarea, .form select{
+  appearance: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: var(--primary-blue);
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  color: white;
+  font-size: large;
+}
+
+.form input:focus-visible, .form textarea:focus-visible, .form select:focus-visible{
+  appearance: none;
+  border: none;
+  outline: none;
+}
+
+.form textarea {
+    margin-bottom: 1rem;
+    height: 100px;
+}
+
+.form textarea::placeholder {
+    color: var(--secondary-blue);
+}
+
+/** Section 8 **/
+.section8 {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    align-items: center;
+    justify-items: center;
+    padding: 3rem 10rem;
+    color: white;
+    font-weight: bold;
+    font-size: 2.5rem;
+    background-color: var(--primary-blue);
+    grid-gap: 10rem;
+}
+
+.section8 > div:nth-child(1) {
+    max-height: 20rem;
+    overflow: hidden;
+}
+
+/* @media only screen and (max-width: 640px) { */
+@media only screen and (max-width: 768px) {
+    .section8 {
+        padding: 1rem;
+        grid-gap: 0;
+        grid-template-columns: none;
+        font-size: 1.5rem;
+        width: 100%;
+    }
+
+    .section8 > div:nth-child(1) {
+        width: 100px;
+    }
+
+    .demo h1, .demo h2, .demo p {
+        padding: 0 1rem;
+    }
+
+    .form {
+        width: 100%;
+        padding: 0 1.5rem;
+    }
+}

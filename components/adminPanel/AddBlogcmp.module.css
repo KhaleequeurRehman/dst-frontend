@@ -1,0 +1,161 @@
+.contentcontainerfirst{
+    width: calc(100% - 200px);
+    margin-left:200px;
+}
+
+.addblogBox{
+    width: 100%;
+}
+.addblogBox .headingBox{
+    width: 70%;
+    margin: 0 auto;
+}
+.addblogBox .headingBox h1{
+    margin: 45px 20px 10px 0px;
+    font-weight: 600;
+}
+.addblogBox .headingBox h1 span{
+    padding: 0 3px 3px 0;
+    border-bottom: 2.5px solid var(--primary-blue);
+}
+.addblogBox .contentBox {
+    width: 70%;
+    margin: 40px auto 20px auto;
+}
+.addblogBox .formcontentBox{
+    width: 100%;
+
+}
+.addblogBox .formcontentBox .inputBox{
+    /* width: 65%; */
+    width: 70%;
+    margin: 20px 0;
+}
+.addblogBox .formcontentBox .textEditorWrapper{
+    background: white;
+}
+.addblogBox .formcontentBox .inputBox input,.addblogBox .formcontentBox .inputBox input:focus{
+    width: 100%;
+    padding: 10px 15px; 
+    font-size: 18px;
+    border: 2px solid var(--primary-blue);
+    outline-color: var(--primary-blue);
+    border-radius: 8px;
+}
+
+.addblogBox .formcontentBox .inputBox select,.addblogBox .formcontentBox .inputBox select:focus{
+    width: 100%;
+    padding: 10px 15px; 
+    font-size: 18px;
+    border: 2px solid var(--primary-blue);
+    outline-color: var(--primary-blue);
+    border-radius: 8px;
+}
+  
+ .addblogBox .formcontentBox .inputBox label {
+    display: inline-block;
+    position: relative;
+    height: 50px;
+    width: 100%;
+    color: white;
+  }
+  
+  .addblogBox .formcontentBox .inputBox input[type="file"] {
+    position: absolute;
+    left: 0;
+    opacity: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+  }
+  .addblogBox .formcontentBox .inputBox .divinsidelabel {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background: #ccc; */
+    background: var(--primary-blue);
+    border: 3px solid var(--primary-blue);
+    /* border: 3px dotted #bebebe; */
+    border-radius: 10px;
+  }
+/* .addblogBox .formcontentBox .inputBox  div.dragover {
+    background-color: #aaa;
+  } */
+    
+
+.addblogBox .formcontentBox .inputBox textarea,.addblogBox .formcontentBox .inputBox textarea:focus{
+    width: 100%;
+    min-height: 200px;
+    padding: 10px 15px; 
+    font-size: 18px;
+    border: 2px solid var(--primary-blue);
+    outline-color: var(--primary-blue);
+    border-radius: 8px;
+    overflow: auto;
+}
+/* .addblogBox .formcontentBox .buttonBox{
+    width: 30%;
+} */
+.addblogBox .formcontentBox .buttonBox button{
+    /* width: 100%; */
+    padding: 15px 30px;
+    background-color: var(--primary-blue);
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    
+    .contentcontainerfirst{
+        width: calc(100% - 70px);
+        margin-left:70px;
+    }
+
+    .addblogBox .headingBox{
+        width: 85%;
+    }
+    .addblogBox .headingBox h1{
+        font-size: 24px;
+    }
+
+    .addblogBox .contentBox {
+        width: 85%;
+    }
+
+    .addblogBox .formcontentBox{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    
+    }
+    .addblogBox .formcontentBox .inputBox{
+        width: 100%;
+    }
+    .addblogBox .formcontentBox .inputBox input,.addblogBox .formcontentBox .inputBox input:focus{
+        width: 100%;
+        padding: 10px 15px; 
+        font-size: 14px;
+        border: 2px solid var(--primary-blue);
+        outline-color: var(--primary-blue);
+        border-radius: 8px;
+    }
+    /* .addblogBox .formcontentBox .buttonBox{
+        margin-top: 20px;
+        width: 40%;
+        align-self: flex-end;
+    } */
+    .addblogBox .formcontentBox .buttonBox button{
+        width: 100%;
+        font-size: 13px;
+        padding: 10px 25px;
+    }
+}

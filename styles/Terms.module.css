@@ -1,0 +1,79 @@
+.section1 {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    grid-gap: 2rem;
+    color: white;
+    background-color: var(--primary-blue);
+    padding: 2rem 3rem;
+}
+
+.section1 div:nth-child(2) {
+    max-width: 250px;
+}
+
+.section1 h1 {
+    font-size: 3.5rem;
+}
+
+.section1 h3 {
+    text-decoration: underline;
+}
+
+.terms {
+    padding: 1rem 2rem;
+    background-color: var(--secondary-blue);
+    color: white;
+}
+
+.terms h4, .terms div > ol > li::before {
+    color: var(--third-blue);
+    font-size: 2rem;
+    text-decoration: underline;
+}
+
+.terms ol {
+    list-style-type: none;
+    counter-reset: item;
+    margin: 0;
+    padding: 0;
+}
+
+.terms li {
+    display: table;
+    counter-increment: item;
+    margin-bottom: 0.6em;
+}
+
+.terms li:before {
+    content: counters(item, ".") ". ";
+    display: table-cell;
+    padding-right: 0.6em;
+}
+
+.terms li li {
+    margin: 0;
+    padding-bottom: 1rem;
+    word-break: break-word;
+}
+
+.terms li li:before {
+    content: counters(item, ".") " ";
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    .section1 h1 {
+        font-size: 2rem;
+    }
+    .section1 h3 {
+        font-size: 1rem;
+    }
+    .terms li li:before {
+        word-break: normal;
+    }
+    .terms h4 {
+        font-size: 1.6rem;
+    }
+}

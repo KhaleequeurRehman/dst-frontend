@@ -1,0 +1,72 @@
+/* html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Montserrat, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  height: 100%;
+  width: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-blue: #1faade;
+  --secondary-blue: #0b5c7f;
+  --third-blue: #6ce5e8;
+  --fourth-blue: #27bce8;
+  --blue: #107cac;
+} */
+
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background: rgb(245, 245, 245);
+  width: 100%;
+  height: 100%;
+}
+.jodit-status-bar__item span{
+  margin-right: 10px;
+}
+.jodit-status-bar__item:last-child .jodit-status-bar__item-right{
+  margin-right: 10px;
+  display: none;
+}
+
+:root {
+  --primary-blue: #1faade;
+  --secondary-blue: #0b5c7f;
+  --third-blue: #6ce5e8;
+  --fourth-blue: #27bce8;
+  --blue: #107cac;
+} 
