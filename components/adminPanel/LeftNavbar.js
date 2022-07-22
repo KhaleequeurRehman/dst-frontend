@@ -62,49 +62,56 @@ function LeftNavbar() {
 					<li>
 						<FontAwesomeIcon
 							icon={faTachometerAlt}
-							style={{ width: "18px", cursor: "pointer" }}
+							style={{ width: "18px", cursor: "pointer",marginRight:"5px" }}
 						/>
 						<Link href="/adminpanel"><a href="#">Dashboard</a></Link>
 					</li>
 					<li>
 						<FontAwesomeIcon
 							icon={faListAlt}
-							style={{ width: "18px", cursor: "pointer" }}
+							style={{ width: "18px", cursor: "pointer",marginRight:"5px" }}
 						/>
 						<Link href="/Categories"><a href="#">Categories</a></Link>
 					</li>
 					<li>
 						<FontAwesomeIcon
 							icon={faAdd}
-							style={{ width: "18px", cursor: "pointer" }}
+							style={{ width: "18px", cursor: "pointer",marginRight:"5px" }}
 						/>
 						<Link href="/AddBlog"><a href="#">Add Blog</a></Link>
 					</li>
 					<li>
 						<FontAwesomeIcon
+							icon={faListAlt}
+							style={{ width: "18px", cursor: "pointer",marginRight:"5px" }}
+						/>
+						<Link href="/AllBlogs"><a href="#">All Blogs</a></Link>
+					</li>
+					{/* <li>
+						<FontAwesomeIcon
 							icon={faBookOpen}
-							style={{ width: "18px", cursor: "pointer" }}
+							style={{ width: "18px", cursor: "pointer",marginRight:"5px" }}
 						/>
 						<Link href="/adminpanel"><a href="#">Library</a></Link>
-					</li>
-					<li>
+					</li> */}
+					{/* <li>
 						<FontAwesomeIcon
 							icon={faHeart}
-							style={{ width: "18px", cursor: "pointer" }}
+							style={{ width: "18px", cursor: "pointer",marginRight:"5px" }}
 						/>
 						<Link href="/adminpanel"><a href="#">Favourite</a></Link>
-					</li>
+					</li> */}
 					<li>
 						<FontAwesomeIcon
 							icon={faCog}
-							style={{ width: "18px", cursor: "pointer" }}
+							style={{ width: "18px", cursor: "pointer",marginRight:"5px" }}
 						/>
 						<Link href="/adminpanel"><a href="#"> Settings</a></Link>
 					</li>
 					<li>
 						<FontAwesomeIcon
 							icon={faSignOutAlt}
-							style={{ width: "18px", cursor: "pointer" }}
+							style={{ width: "18px", cursor: "pointer",marginRight:"5px" }}
 						/>
 						<a href="#" onClick={logoutHandler}>Logout</a>
 					</li>

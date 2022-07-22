@@ -207,7 +207,6 @@
    border-radius: 20px;
 }
 
-
 /* @media only screen and (max-width: 640px) { */
     @media only screen and (max-width: 768px) {
         .content_wrapper {
@@ -243,6 +242,7 @@
         .content_wrapper .col2 .user_detail_title h2{
             font-size: 18px;
         }
+        
         .verifyMsgContainer .verifyMsgBox{
             width: 90%;
         }
@@ -266,5 +266,5 @@
             margin-top: 20px;
             border-radius: 20px;
          }
-        
+
     }

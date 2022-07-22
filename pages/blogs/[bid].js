@@ -54,7 +54,7 @@ const SingleBlog = () => {
      getBlogs()
       // router?.query?.bid && getBlogs()
     // }, [router?.query?.bid])
-    }, [router?.query?.bid])
+    }, [])
     
     console.log("singleBlogData => ", blogData)
 

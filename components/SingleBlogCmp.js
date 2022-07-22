@@ -76,7 +76,10 @@ import Swal from 'sweetalert2'
                                 <FontAwesomeIcon icon={faClock} /><span>&nbsp;{moment(blogData?.user?.createdAt).format("MMM Do YY")}</span>
                             </p>
                         </div>
-                        <div className={cn(styles.singleBlogDescriptionWrapper)} dangerouslySetInnerHTML={{__html:blogData?.description}}>
+                        {/* <div className={cn(styles.singleBlogDescriptionWrapper)} dangerouslySetInnerHTML={{__html:blogData?.description}}>
+                        </div> */}
+                        <div className={cn(styles.singleBlogDescriptionWrapper)}>
+                          <p>{blogData?.description}</p>
                         </div>
                         <div className={cn(styles.singleBlogCommentList)}>
                               <div className={cn(styles.singleBlogCommentListHeading)}>

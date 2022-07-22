@@ -73,6 +73,9 @@ const AddBlogCmp = () => {
           confirmButtonText: 'Close'
           })
         }
+
+        values.title="";
+        values.description ="";
     }
   });
 
