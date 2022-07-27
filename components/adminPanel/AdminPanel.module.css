@@ -67,14 +67,19 @@
 .wrapper>ul{
     gap:5px;
 }
+.wrapper>ul>li{
+    height: 45px;
+}
 .wrapper>ul>li:hover{
-  color:red;
+  color: var(--primary-blue);
 }
 .wrapper>ul>li>a{
     opacity: 0;
+    position: relative;
+    top: -30px;
 }
 
-  }
+}
 
 
 /* header css starts  */
